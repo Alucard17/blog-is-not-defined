@@ -61,6 +61,7 @@
   --color-heading-black: #ef476f;
   --color-accent: #d1dce5;
   --color-title: #ef476f;
+  --bg-color: #ffffff;
 }
 
 /* HTML elements */
@@ -79,6 +80,17 @@ html {
 }
 
 body {
+  --color-text: black;
+  --bg-color: white;
+  font-family: var(--font-body);
+  font-size: var(--fontSize-1);
+  color: var(--color-text);
+  background-color: var(--bg-color);
+}
+
+body.dark {
+  --color-text: #dddddd;
+  --bg-color: #2e3047;;
   font-family: var(--font-body);
   font-size: var(--fontSize-1);
   color: var(--color-text);
